@@ -6,6 +6,8 @@ Link Youtube : https://www.youtube.com/playlist?list=PLFIM0718LjIUHFRMzPJ0wGjx9_
 
 Install :
 
+npm init -y
+
 npm i -D tailwindcss postcss autoprefixer
 
 npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS | Basic Utility</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customization -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.25rem',
+                    },
+                    fontFamily: {
+                        inter: ['Inter'],
+                    },
+                    colors: {
+                        wpu: '#bada55',
+                        kopi: '#c0ffee'
+                    },
+                    animation: {
+                        'spin-slow': 'spin 3s linear infinite',
+                        'goyang': 'goyang 1s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        goyang: {
+                            '0%, 100%': {transform: 'rotate(-3deg)'},
+                            '50%': {transform: 'rotate(3deg)'}
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        #toggle:checked ~ label div.toggle-circle {
+            @apply translate-x-3;
+        }
+    </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-200">
+    <h1 class="text-6xl font-bold text-center my-10"><span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Tailwind CSS</span></h1>
+    
+    <div class="p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+        <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome To The Jungle🚀</span></h2>
+        <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@taufiqpop99</span></div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000">
+            <div class="w-full h-full bg-[url('/img/grid/1.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-3">
+            <div class="w-full h-full bg-[url('/img/grid/2.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000">
+            <div class="w-full h-full bg-[url('/img/grid/3.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000">
+            <div class="w-full h-full bg-[url('/img/grid/4.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000">
+            <div class="w-full h-full bg-[url('/img/grid/5.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-2">
+            <div class="w-full h-full bg-[url('/img/grid/6.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-4">
+            <div class="w-full h-full bg-[url('/img/grid/7.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000">
+            <div class="w-full h-full bg-[url('/img/grid/8.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-3">
+            <div class="w-full h-full bg-[url('/img/grid/9.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+        <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-1000 md:col-start-3">
+            <div class="w-full h-full bg-[url('/img/grid/10.jpeg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-1000"></div>
+
+        </div>
+    </div>
+    
+    <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        });
+    </script>
+</body>
+</html>
